@@ -7,11 +7,9 @@
         versionCode = "10" >
 
         <!-- versionCode is optional and Android only -->
-
-        <preference name="phonegap-version" value="3.1.0" />
-
+		
         <name>MDZ's PhoneGap Test App</name>
-
+		
         <description>
         Zażółć Gęślą Jaźń
         </description>
@@ -19,6 +17,26 @@
         <author href="http://marcim.info" email="kontakt@marcim.info">
         Marcin Dziedzic
         </author>
+        
+        <!-- other settings and preferences -->
+		
+		<gap:platform name="android" />
+		
+        <preference name="phonegap-version" value="3.3.0" />
+        
+		<preference name="splash-screen-duration" value="3000"/> 
+		
+		<icon src="assets/icon/hdpi.png" gap:platform="android" gap:qualifier="hdpi" />
+		<gap:splash src="assets/splash/hdpi.png" gap:platform="android" gap:qualifier="hdpi" />
+		
+		<access origin="http://net-in.pl" subdomains="true" />
+		
+		<gap:plugin name="com.phonegap.plugins.pushplugin" version="2.1.1" />
+		
+		<gap:config-file platform="android" parent="/manifest">
+			
+		</gap:config-file>
 
+		
     </widget>
 
